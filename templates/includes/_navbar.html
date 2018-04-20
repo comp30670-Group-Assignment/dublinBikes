@@ -1,0 +1,43 @@
+<script src="{{ url_for('static', filename='navbar.js') }}"></script>    
+<nav class="navbar navbar-inverse" id="navCustom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    <a href='http://justeat.ie'> <img style="margin-top: 10px; margin-left: 0px;" src="/static/logo1.png"></a>
+    <a href='http://www.dublinbikes.ie'> <img style="margin-top: 10px; margin-left: 0px;" src="/static/logo2.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      
+          <li id="right-block-2">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Search a station...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+                <div id="marker-loc"></div>
+            </div>
+          </div>
+          </li>
+          
+           <li id="right-block-1">
+           <div id="weather-block">
+             <div id="leftie"> <b>DUBLIN</b><br>Weather</div>
+             <div id="center"><img id = "image" width="100%"></div>
+             <div id="rightie-top"></div>
+             <div id="rightie-bottom">Description...</div>
+         </div>
+         </li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
